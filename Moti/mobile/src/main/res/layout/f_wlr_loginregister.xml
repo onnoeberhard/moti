@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="25dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/r1username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username / email" />
+
+        <EditText
+            android:id="@+id/r1password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/r1register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/r1help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help" />
+
+        <Button
+            android:id="@+id/r1login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I already have an account" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/r2name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optional:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday:" />
+
+        <TextView
+            android:id="@+id/r2birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01.01.1970" />
+
+        <Button
+            android:id="@+id/r2pickBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Bithday" />
+
+        <RadioGroup
+            android:id="@+id/r2gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/r2nogender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="don't specify" />
+
+            <RadioButton
+                android:id="@+id/r2male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male" />
+
+            <RadioButton
+                android:id="@+id/r2female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/r2ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok" />
+
+        <Button
+            android:id="@+id/r2help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help" />
+
+        <Button
+            android:id="@+id/r2back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/lusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username / email" />
+
+        <EditText
+            android:id="@+id/lpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/llogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/lforgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password" />
+
+        <Button
+            android:id="@+id/lhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help" />
+
+        <Button
+            android:id="@+id/lback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+</RelativeLayout>

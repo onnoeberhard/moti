@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Moti</string>
+
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="error_sorry">An error occurred! We\'re sorry!</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

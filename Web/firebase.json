@@ -1,0 +1,9 @@
+{
+  "firebase": "moti1",
+  "public": "micro",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

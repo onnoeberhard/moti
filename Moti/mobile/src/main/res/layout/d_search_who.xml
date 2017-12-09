@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dswho_anyage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="any age"/>
+
+        <RadioButton
+            android:id="@+id/dswho_myage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="around my age"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dswho_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="settings"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dswho_anygender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="don't care"/>
+
+        <RadioButton
+            android:id="@+id/dswho_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"/>
+
+        <RadioButton
+            android:id="@+id/dswho_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"/>
+
+    </RadioGroup>
+
+</LinearLayout>

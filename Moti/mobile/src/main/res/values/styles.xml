@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorSecondary</item>
+    </style>
+
+    <!--<style name="AT_TS" parent="AppTheme">-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="TitleSlim" parent="@android:style/TextAppearance">-->
+        <!--<item name="android:textSize">28sp</item>-->
+        <!--<item name="android:fontFamily">sans-serif-thin</item>-->
+    <!--</style>-->
+
+</resources>

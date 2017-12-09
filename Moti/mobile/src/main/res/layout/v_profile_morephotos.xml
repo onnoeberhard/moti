@@ -1,0 +1,5 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:text="+" />

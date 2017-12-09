@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cefd9716-2cc7-4ad0-974e-9e53a2a21bbb" name="Hostinger" url="http://moti.16mb.com">
+        <fileTransfer host="moti.16mb.com" port="21" rootFolder="/public_html/" password="dfc2dfc5dfd9dfdedfc3dfc4dfcddfcfdff8df9bdf99df9edf9cdf9fdf98" username="u601419936">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

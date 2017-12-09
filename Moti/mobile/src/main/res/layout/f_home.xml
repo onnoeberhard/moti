@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:paddingBottom="88dp"
+            android:paddingTop="6dp">
+
+            <RelativeLayout
+                android:id="@+id/nointernet_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/nointernet_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@color/colorSecondary"
+                                android:padding="24dp"
+                                android:src="@drawable/wifi_off"
+                                android:tint="#ffffff"
+                                app:layout_aspectRatio="178%"
+                                app:layout_widthPercent="100%" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="24dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:text="No Internet Connection"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="App is in Offline-Mode."
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/nointernet_retry"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="Retry" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nolocation_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/nolocation_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@color/colorSecondary"
+                                android:padding="24dp"
+                                android:src="@drawable/location_off"
+                                android:tint="#ffffff"
+                                app:layout_aspectRatio="178%"
+                                app:layout_widthPercent="100%" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="24dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:text="No Location Available"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Moti needs to know your location to properly work."
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/nolocation_retry"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="Retry" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/novisibility_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/novisibility_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@color/colorSecondary"
+                                android:padding="24dp"
+                                android:src="@drawable/visbility_off"
+                                android:tint="#ffffff"
+                                app:layout_aspectRatio="178%"
+                                app:layout_widthPercent="100%" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="24dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <com.moti.android.FontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:textStyle="normal"
+                                    android:text="You are invisible"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="You will not be notified if people around you are looking to meet someone."
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/novisibility_button"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="Turn visibility on" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/main_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!--<ImageView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:background="@color/colorSecondary"-->
+                            <!--android:padding="24dp"-->
+                            <!--android:src="@drawable/visbility_off"-->
+                            <!--android:tint="#ffffff"-->
+                            <!--app:layout_aspectRatio="178%"-->
+                            <!--app:layout_widthPercent="100%" />-->
+
+                            <fragment
+                                android:id="@+id/main_map"
+                                class="com.google.android.gms.maps.SupportMapFragment"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                app:layout_aspectRatio="178%"
+                                app:layout_widthPercent="100%" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/main_primeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?android:selectableItemBackground">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="24dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/main_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="16dp"
+                                        android:textColor="#000000"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Click to meet someone."
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="#1a000000" />
+
+                        <TextView
+                            android:id="@+id/main_quicktt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="QuickTT©" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="#1a000000" />
+
+                        <Button
+                            android:id="@+id/main_visibility"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="Turn visibility off" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

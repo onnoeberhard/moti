@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <Preference
+            android:key="radius"
+            android:title="My Radius" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="profvis"
+            android:title="Other People can see my Profile" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Account">
+
+        <Preference
+            android:key="logout"
+            android:title="Log Out" />
+
+        <Preference
+            android:key="changepw"
+            android:title="Change Password" />
+
+        <Preference
+            android:key="deleteaccount"
+            android:title="Delete Account" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

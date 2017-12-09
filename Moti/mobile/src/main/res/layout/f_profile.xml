@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:paddingBottom="88dp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#456765"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_sentiment_very_satisfied_black_24dp"
+                        android:tint="#fff" />
+
+                    <com.moti.android.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profilepic"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/profilepic" />
+
+                <com.moti.android.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="Onno Eberhard"
+                    android:textColor="#fff"
+                    android:textSize="28sp" />
+
+                <com.moti.android.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="Hanover, Germany"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_sentiment_dissatisfied_black_24dp"
+                        android:tint="#fff" />
+
+                    <com.moti.android.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <com.moti.android.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="About Me"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.moti.android.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <com.moti.android.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Photos"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridView
+            android:id="@+id/photos_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+
+        <com.moti.android.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Info"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/info_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/info_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/info_card"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--app:cardUseCompatPadding="true">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="92dp"-->
+        <!--android:layout_height="92dp"-->
+        <!--android:layout_marginRight="24dp"-->
+        <!--android:src="@drawable/profilepic" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:ellipsize="end"-->
+        <!--android:gravity="center"-->
+        <!--android:maxLines="3"-->
+        <!--android:text="Onno Eberhard"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="24sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:text="18, m"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:alpha=".8"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="23"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="32dp"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:src="@drawable/ic_sentiment_very_satisfied_black_24dp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="3dp"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/dot" />-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="32dp"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:src="@drawable/ic_sentiment_dissatisfied_black_24dp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="0"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="About Me:"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/gallery_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/gallery_card"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--app:cardUseCompatPadding="true">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="144dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:foreground="#804CAF50">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_1"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/profilepic"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_2"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/profilepic"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_3"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/profilepic"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Photos"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="32dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="32sp"-->
+        <!--android:textColor="#fff"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+
+</ScrollView>

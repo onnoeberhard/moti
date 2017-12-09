@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - moti@localhost" uuid="b52862af-186b-47bd-95b5-eec4c6de211b">
+    <database-info product="MySQL" version="5.7.11-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="moti">
+        <visible>1</visible>
+      </schema>
+      <table id="2" parent="1" name="requests"/>
+      <table id="3" parent="1" name="users"/>
+      <table id="4" parent="1" name="meetingpoints"/>
+      <column id="5" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)|0</data-type>
+      </column>
+      <column id="6" parent="2" name="uid">
+        <data-type>varchar(8)|0</data-type>
+      </column>
+      <column id="7" parent="2" name="message">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="8" parent="2" name="location">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="9" parent="2" name="radius">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="10" parent="2" name="rejections">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="11" parent="2" name="notified">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="12" parent="2" name="acceptances">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="13" parent="2" name="mp">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="14" parent="2" name="time">
+        <data-type>text|0</data-type>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)|0</data-type>
+      </column>
+      <column id="17" parent="3" name="username">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="18" parent="3" name="password">
+        <data-type>varchar(256)|0</data-type>
+      </column>
+      <column id="19" parent="3" name="name">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="20" parent="3" name="location">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="21" parent="3" name="fcm_rid">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="22" parent="3" name="info">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="23" parent="3" name="board">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="24" parent="3" name="imgs">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="25" parent="3" name="near">
+        <data-type>text|0</data-type>
+      </column>
+      <key id="26" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="27" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)|0</data-type>
+      </column>
+      <column id="28" parent="4" name="name">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="29" parent="4" name="timetable">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="30" parent="4" name="location">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="31" parent="4" name="near">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="32" parent="4" name="status">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="33" parent="4" name="imgs">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="34" parent="4" name="board">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="35" parent="4" name="data">
+        <data-type>text|0</data-type>
+      </column>
+      <key id="36" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
